@@ -7,38 +7,81 @@
 body{
     width: 100%;
     background-color: mintcream;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 0;
 }
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color:mintcream;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+}
+
 .logo-container img{
     width: 5vw;
     position: relative;
 }
-nav{
+
+header {
     background-color: #005555;
+}
+
+nav{
     display: flex;
     flex-wrap: nowrap;
 }
 
-.nav-buttons-container{
+.nav-buttons-container {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items:center;
 }
+
+.nav-buttons-container ul {
+    display: flex;
+    list-style-type: none;
+    padding-right: 10%;
+}
+
 .nav-buttons-container a{
     text-decoration: none;
-    color: black;
-    margin-left: 30px;
-    padding: 0px 20px 0px 20px;
-    background-color: #F7FF93;
-    border: 2px solid #777777;
-   box-shadow: 6px 6px 1px -1px rgba(0,0,0,0.48);
+    color: #A1E3D8;
+    padding-left: 3vw;
+    padding-right: 3vw;
 }
-.nav-buttons-container a:hover{
+
+nav > div > ul > li {
+    background-color: #F7FF93;
+    padding: 0px 20px 0px 20px;;
+}
+
+nav > div > ul > li:hover {
     font-weight: bold;
     background-color: bisque;
     border-radius: 16px;
     transform: scale(1.25);
     transition: ease 250ms;
+}
+
+li.opcion
+{
+   float: left;
+   margin: 0px 20px;
+   border: 2px solid #777777;
+   box-shadow: 6px 6px 1px -1px rgba(0,0,0,0.48);
+}
+
+a.opcion
+{
+    display: block;
+    padding: 5px;
+    color: #005555;
+    font-size: 18px;
 }
 h1{
     margin-bottom: 2vh;
@@ -66,7 +109,7 @@ h1{
     align-items: center;
     align-self: center;    
     border-radius: 10px;
-    height: 100vh;
+    height: 70vh;
     box-shadow: 3px 3px 3px gray;
 }
 .container{
@@ -106,7 +149,7 @@ h1{
     
 }
 .container-iframes{
-    margin: 0 auto;
+    margin: 20px auto;
     display: grid;
     grid-template-columns: 1fr 1fr;
     padding-left: 10vw;
@@ -116,20 +159,16 @@ h1{
 }
 
 .iframe-clima{
-    margin: 4vh 0 4vh 0;
-    width: 100%;
-    height: 58vh;
     display: flex;
     justify-content: center;
     background-color: #A1E3D8;
     border-radius: 10px;
-    padding-top: 5vh;
-    padding: 2vw;
     box-shadow: 3px 3px 3px gray;
 }
+
 .iframe-spotify{
-    width: 100%;
-    margin: 4vh 0 4vh 0;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
 }
 
 footer{
