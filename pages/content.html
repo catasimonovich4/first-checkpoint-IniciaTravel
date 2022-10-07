@@ -5,145 +5,161 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/styles.css">
     <title>Travel Destinations</title>
 </head>
 
 <body>
-    <header>
-        <nav>
-            <div class="logo-container">
-                <a href="#"><img src="../assets/logo.png" alt="travel-logo"></a> <!-- falta agregar ruta a home -->
+    <div class="wrapper">
+        <header>
+            <nav>
+                <div class="logo-container">
+                    <img src="../assets/logo.png" alt="travel-logo"> <!-- falta agregar ruta a home -->
+                </div>
+                <div class="nav-buttons-container">
+                    <ul>
+                        <li class="opcion">
+                            <a class="opcion" href="../index.html">Home Page: About Us</a>
+                        </li>
+                        <li class="opcion">
+                            <a class="opcion" href="./content.html">Travel Destinations</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            <div class="container-title-description">
+                <h1>
+                    Top 3 most visited destinations in Argentina
+                </h1>
+                <p>
+                    Have you ever seen the breathtaking landscapes that Argentina has to offer? If you ever come visit
+                    our
+                    country, we want to make sure that you find the best places to stop by. That's why we created this
+                    top 3
+                    destination list where we would, not only provide you information, photos and videos of the place,
+                    but
+                    also give you differents activities you can do there.
+                </p>
             </div>
-            <div class="nav-buttons-container">
-                <ul>
-                    <li class="unclicked-button">
-                        <a href="../index.html">Home Page: About Us</a>
-                    </li>
-                    <li class="clicked-button">
-                        <b>Travel Destinations</b>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
-    <main>
-        <div class="intro-container">
-            <h1>
-                Top 3 most visited destinations in Argentina
-            </h1>
-            <p>
-                Have you ever seen the breathtaking landscapes that Argentina has to offer? If you ever come visit our country, we want to make sure that you find the best places to stop by. That's why we created this top 3 destination list where we would, not only provide you information, photos and videos of the place, but also give you differents activities you can do there.
-            </p>
-        </div>
-        <section>
-            <div class="first-place">
-                <div class="flip-card-cpage">
-                    <!-- Abierto a cambios, code copiado de https://www.w3schools.com/howto/howto_css_flip_card.asp -->
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="#" alt="bariloche">
+            <section class="container-places">
+                <div class="first-place">
+                    <div class="flip-card">
+                        <!-- Abierto a cambios, code copiado de https://www.w3schools.com/howto/howto_css_flip_card.asp -->
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../assets/bariloche.jpeg" alt="bariloche" width="300" height="300">
+                            </div>
+                            <div class="flip-card-back">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d96169.07947331648!2d-71.40995397496731!3d-41.1283316407641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x961a7b1520c860e5%3A0x8210ae97cb7b9a65!2sSan%20Carlos%20de%20Bariloche%2C%20R%C3%ADo%20Negro!5e0!3m2!1ses-419!2sar!4v1665172795746!5m2!1ses-419!2sar"
+                                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
-                        <div class="flip-card-back">
-                            <iframe src="" frameborder="0">
-                                <!-- Aquí va el mapa del destino -->
-                            </iframe>
+                    </div>
+                    <div class="descript-container">
+                        <!-- Información de destino -->
+                        <h2><a href="#">San Carlos de Bariloche</a></h2>
+                        <p>Nipping at the ankles of the Andes, San Carlos is a world-renowned ski destination, set in a
+                            landscape offering all the natural wonders of Argentina. Visitors can experience snow, lakes
+                            and peaceful beaches, along with vibrant nightclubs and gourmet cuisine. Throughout the
+                            year, the area hosts several music festivals, art exhibitions, expositions and various
+                            conventions.
+                        </p>
+                    </div>
+                    <div class="yt-iframe">
+                        <!-- Video de 1er destino: estilo trailer -->
+                        <iframe width="300" height="300" src="https://www.youtube.com/embed/R70Hv0Ae-nc"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                </div>
+                <div class="second-place">
+                    <div class="yt-iframe">
+                        <iframe width="300" height="300" src="https://www.youtube.com/embed/PzahnW5PlAM"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="descript-container">
+                        <!-- Información de destino -->
+                        <h2><a href="#">Puerto Iguazu</a></h2>
+                        <p>Perched at the Triple Frontier, where Brazil, Paraguay and Argentina meet, Puerto Iguazu is
+                            linked to Brazil by the Tancredo Neves bridge. It is home to the Museum of Images of the
+                            Jungle, the Mborore Museum, a bird rehabilitation center and the famed Iguazu National Park.
+                            The National Park is home to 275 waterfalls, including the world-renowned Iguazu Falls.</p>
+                    </div>
+                    <div class="flip-card">
+                        <!-- Abierto a cambios, code copiado de https://www.w3schools.com/howto/howto_css_flip_card.asp -->
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../assets/puerto-iguazu.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28780.98575456083!2d-54.60405448335766!3d-25.61743357055641!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6923af74e96dd%3A0xb4b8eeda942aae07!2sPuerto%20Iguaz%C3%BA%2C%20Misiones!5e0!3m2!1ses-419!2sar!4v1665174086550!5m2!1ses-419!2sar"
+                                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="descript-container">
-                    <!-- Información de destino -->
-                    <h2>Destination 1</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sit debitis ipsa impedit
-                        enim est. Delectus eum nihil provident id ratione quas, harum hic mollitia sed perferendis vel,
-                        iste totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio libero
-                        accusantium id autem quaerat explicabo! Tempore ipsam harum aliquid dolorem!</p>
-                </div>
-                <div class="yt-iframe">
-                    <!-- Video de 1er destino: estilo trailer -->
-                    <iframe src="#" frameborder="0"></iframe>
-                </div>
-            </div>
-            <div class="second-place">
-                <div class="yt-iframe">
-                    <!-- Video de 2do destino: estilo trailer -->
-                    <iframe src="#" frameborder="0"></iframe>
-                </div>
-                <div class="descript-container">
-                    <!-- Información de destino -->
-                    <h2>Destination 2</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sit debitis ipsa impedit
-                        enim est. Delectus eum nihil provident id ratione quas, harum hic mollitia sed perferendis vel,
-                        iste totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio libero
-                        accusantium id autem quaerat explicabo! Tempore ipsam harum aliquid dolorem!</p>
-                </div>
-                <div class="flip-card-cpage">
-                    <!-- Abierto a cambios, code copiado de https://www.w3schools.com/howto/howto_css_flip_card.asp -->
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="#" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <iframe src="" frameborder="0">
-                                <!-- Aquí va el mapa del destino -->
-                            </iframe>
+                <div class="third-place">
+                    <div class="flip-card">
+                        <!-- Abierto a cambios, code copiado de https://www.w3schools.com/howto/howto_css_flip_card.asp -->
+                        <div class="flip-card-inner">
+                            <div class="flip-card-front">
+                                <img src="../assets/ushuaia.jpg" alt="Avatar" style="width:300px;height:300px;">
+                            </div>
+                            <div class="flip-card-back">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d36791.533992972865!2d-68.37456053289232!3d-54.8068419864738!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xbc4c22b5bad109bf%3A0x5498473dba43ebfc!2sUshuaia%2C%20Tierra%20del%20Fuego!5e0!3m2!1ses-419!2sar!4v1665174147193!5m2!1ses-419!2sar"
+                                    width="300" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
                         </div>
                     </div>
-                </div>
-            </div>
-            <div class="third-place">
-                <div class="flip-card-cpage">
-                    <!-- Abierto a cambios, code copiado de https://www.w3schools.com/howto/howto_css_flip_card.asp -->
-                    <div class="flip-card-inner">
-                        <div class="flip-card-front">
-                            <img src="#" alt="Avatar" style="width:300px;height:300px;">
-                        </div>
-                        <div class="flip-card-back">
-                            <iframe src="" frameborder="0">
-                                <!-- Aquí va el mapa del destino -->
-                            </iframe>
-                        </div>
+                    <div class="descript-container">
+                        <!-- Información de destino -->
+                        <h2><a href="#">Ushuaia</a></h2>
+                        <p>The world's southernmost city is located on the Beagle Channel, between the Martial Range and
+                            the end of the world. It is a key access point to skiing at Cerro Castor and Glaciar
+                            Martial, wildlife adventures with penguins and orcas in the Beagle Channel, and Tierra del
+                            Fuego National Park. Of course, it’s also the port of call nearest Antarctica, an unique
+                            destination.</p>
+                    </div>
+                    <div class="yt-iframe">
+                        <iframe width="300" height="300" src="https://www.youtube.com/embed/PJpoT9RncJQ"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
                     </div>
                 </div>
-                <div class="descript-container">
-                    <!-- Información de destino -->
-                    <h2>Destination 3</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sit debitis ipsa impedit
-                        enim est. Delectus eum nihil provident id ratione quas, harum hic mollitia sed perferendis vel,
-                        iste totam. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Distinctio libero
-                        accusantium id autem quaerat explicabo! Tempore ipsam harum aliquid dolorem!</p>
-                </div>
-                <div class="yt-iframe">
-                    <!-- Video de 3er destino: estilo trailer -->
-                    <iframe src="#" frameborder="0"></iframe>
-                </div>
+            </section>
+        </main>
+        <footer>
+            <div class="container-rights">
+                <p>© All Rights Reserved IniciaTravel 2022</p>
+                <p class="footerup">Want to go up?<a href="#top">Go up</a></p>
             </div>
-        </section>
-        <div>
-            <!-- Sitio para conocer el clima -->
-            <iframe src="#" frameborder="0"></iframe>
-            <!-- Lista de Spotify para escuchar mirando el sitio-->
-            <iframe src="#" frameborder="0"></iframe>
-        </div>
-    </main>
-    <footer>
-        <div>
-            <p>© All Rights Reserved IniciaTravel 2022</p>
-        </div>
-        <div>
-            <p class="footerup">Want to go up?<a href="#top">Go up</a></p>
-            <div>
-                <a href="https://github.com/TrostdorfA" target="_blank" ><img src="./assets/github.png" alt="logo-gitHub">Andres Trostdorf:</a>
+            <div class="container-links">
+                <a href="https://github.com/TrostdorfA" target="_blank"><img src="../assets/github.png"
+                        alt="logo-gitHub">Andres Trostdorf:</a>
+                <a href="https://github.com/catasimonovich4" target="_blank"><img src="../assets/github.png"
+                        alt="logo-gitHub">Catalina Simonovich:</a>
+                <a href="https://github.com/GermanaCaviglia" target="_blank"><img src="../assets/github.png"
+                        alt="logo-gitHub">Germana Caviglia:</a>
+                <a href="https://github.com/IsaRdz" target="_blank"><img src="../assets/github.png"
+                        alt="logo-gitHub">Isabel Rodriguez:</a>
             </div>
-            <div>
-                <a href="https://github.com/catasimonovich4" target="_blank"><img src="./assets/github.png" alt="logo-gitHub">Catalina Simonovich:</a>
-            </div>
-            <div>
-                <a href="https://github.com/GermanaCaviglia" target="_blank"><img src="./assets/github.png" alt="logo-gitHub">Germana Caviglia:</a>
-            </div>
-            <div>
-                <a href="https://github.com/IsaRdz" target="_blank"><img src="./assets/github.png" alt="logo-gitHub">Isabel Rodriguez:</a>
-            </div>
-        </div>
-    </footer>
+        </footer>
+    </div>
 </body>
+
 </html>

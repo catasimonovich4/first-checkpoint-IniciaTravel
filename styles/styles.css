@@ -1,0 +1,226 @@
+body {
+    width: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../assets/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: 0 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.wrapper {
+    max-width: 1400px;
+    margin: 0 auto;
+    background-color:mintcream;
+    box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+}
+
+.logo-container img{
+    width: 5vw;
+    position: relative;
+}
+
+header {
+    background-color: #005555;
+}
+
+nav {
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.nav-buttons-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.nav-buttons-container ul {
+    display: flex;
+    list-style-type: none;
+    padding-right: 10%;
+}
+
+.nav-buttons-container a{
+    text-decoration: none;
+    color: #A1E3D8;
+    padding-left: 3vw;
+    padding-right: 3vw;
+}
+
+nav > div > ul > li {
+    background-color: #F7FF93;
+    padding: 0px 20px 0px 20px;;
+}
+
+nav > div > ul > li:hover {
+    font-weight: bold;
+    background-color: bisque;
+    border-radius: 16px;
+    transform: scale(1.25);
+    transition: ease 250ms;
+}
+
+li.opcion
+{
+   float: left;
+   margin: 0px 20px;
+   border: 2px solid #777777;
+   box-shadow: 6px 6px 1px -1px rgba(0,0,0,0.48);
+}
+
+a.opcion
+{
+    display: block;
+    padding: 5px;
+    color: #005555;
+    font-size: 18px;
+}
+
+h1{
+    margin-bottom: 2vh;
+    text-align: center;
+}
+
+.container-title-description{
+    margin: 0 auto;
+    padding: 2vw;
+    padding-left: 10vw;
+    padding-right: 10vw;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    margin: auto;
+    border-radius: 10px;
+  }
+
+.flip-card-inner div > img, iframe {
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: mintcream;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: mintcream;
+    color: white;
+    transform: rotateY(180deg);
+  }
+
+  .container-places {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    grid-auto-rows: auto;
+    grid-gap: 25px;
+  }
+
+.first-place {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.second-place {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+}
+
+.third-place {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding-bottom: 25px;
+    grid-gap: 25px;
+}
+
+.container-iframes {
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    grid-auto-rows: auto;
+    grid-gap: 25px;
+}
+
+footer{
+    background-color: #005555;
+    color: #A1E3D8;
+
+}
+.container-rights{
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-around;
+}
+.container-links{
+    display: flex;
+    justify-content: space-around;
+    padding: 2vw;
+    padding-bottom: 5vh;
+}
+.container-links a{
+    text-decoration: none;
+    color: #A1E3D8;
+}
+
+.descript-container {
+    background-color: #005555;
+    color: #A1E3D8;
+    align-items: center;
+    align-self: center;    
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px gray;
+}
+
+.descript-container a {
+    color: #F7FF93;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.descript-container p {
+    margin: 10px;
+}
+
+.yt-iframe {
+    margin: auto;
+}
