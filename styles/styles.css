@@ -6,36 +6,46 @@
 }
 body{
     width: 100%;
-    background-color: #A1E3D8;
+    background-color: mintcream;
 }
-.logo{
-    width: 8vw;
+.logo-container img{
+    width: 5vw;
     position: relative;
 }
 nav{
     background-color: #005555;
-}
-nav{
     display: flex;
     flex-wrap: nowrap;
 }
+
 .nav-buttons-container{
     width: 100%;
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     align-items:center;
 }
 .nav-buttons-container a{
     text-decoration: none;
-    color: #A1E3D8;
-    padding-left: 3vw;
-    padding-right: 3vw;
+    color: black;
+    margin-left: 30px;
+    padding: 0px 20px 0px 20px;
+    background-color: #F7FF93;
+    border: 2px solid #777777;
+   box-shadow: 6px 6px 1px -1px rgba(0,0,0,0.48);
+}
+.nav-buttons-container a:hover{
+    font-weight: bold;
+    background-color: bisque;
+    border-radius: 16px;
+    transform: scale(1.25);
+    transition: ease 250ms;
 }
 h1{
     margin-bottom: 2vh;
     text-align: center;
 }
 .container-title-description{
+    background-color: mintcream;
     margin: 0 auto;
     padding: 2vw;
     padding-left: 10vw;
@@ -80,7 +90,6 @@ h1{
     display: flex;
     justify-content: flex-end;
     margin-top: 2vh;
-    
 }
 
 .button-view-more{
@@ -109,6 +118,13 @@ h1{
 
 .iframe-clima{
     width: 48%;
+    height: 58vh;
+    display: flex;
+    justify-content: center;
+    background-color: #A1E3D8;
+    border-radius: 10px;
+    padding: 2vw;
+    box-shadow: 3px 3px 3px gray;
 }
 .iframe-spotify{
     width: 48%;
@@ -132,6 +148,5 @@ footer{
 }
 .container-links a{
     text-decoration: none;
-    color: #A1E3D8;
-    
+    color: #A1E3D8;    
 }
