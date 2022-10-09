@@ -39,7 +39,10 @@ body {
 }
 
 .logo-container img {
-  width: 5vw;
+  height: 11vh;
+  margin-left: 2vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   position: relative;
 }
 
@@ -62,7 +65,7 @@ nav {
 .nav-buttons-container ul {
   display: flex;
   list-style-type: none;
-  padding-right: 8%;
+  padding-right: 27%;
 }
 
 .nav-buttons-container a {
@@ -270,7 +273,7 @@ footer {
 
 .scroll-container a {
   position: sticky;
-  top: 90vh;
+  top: 75vh;
   cursor: pointer;
   font-size: 40px;
   color: transparent;
