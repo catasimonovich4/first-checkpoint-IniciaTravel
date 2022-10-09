@@ -7,8 +7,7 @@
 
 body {
   width: 100%;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url(../assets/background.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -98,14 +97,14 @@ h1 {
   margin-bottom: 5vh;
 }
 
-.flip-card {
+.flip-card-home {
   background-color: transparent;
   width: 100%;
   height: 300px;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
-.flip-card-inner {
+.flip-card-inner-home {
   position: relative;
   width: 100%;
   height: 100%;
@@ -115,12 +114,12 @@ h1 {
 
 }
 
-.flip-card:hover .flip-card-inner {
+.flip-card-home:hover .flip-card-inner-home {
   transform: rotateY(180deg);
 }
 
-.flip-card-front,
-.flip-card-back {
+.flip-card-front-home, .flip-card-front-home img,
+.flip-card-back-home {
   position: absolute;
   width: 100%;
   height: 100%;
@@ -129,14 +128,14 @@ h1 {
   border-radius: 10px;
 }
 
-.flip-card-front {
+.flip-card-front-home {
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.flip-card-back {
+.flip-card-back-home {
   background-color: #005555;
   color: #a1e3d8;
   transform: rotateY(180deg);
@@ -146,12 +145,12 @@ h1 {
   width: 300px;
 }
 
-.flip-card-back p {
+.flip-card-back-home p {
   padding-left: 2vw;
   padding-right: 2vw;
 }
 
-.flip-card-back span {
+.flip-card-back-home span {
   color: #f7ff93;
   font-weight: bold;
   padding-top: 5vh;
