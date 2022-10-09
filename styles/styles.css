@@ -6,13 +6,25 @@
 }
 
 body {
-width: 100%;
-  background-color: mintcream;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),  url(../assets/background.jpg);
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../assets/background.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: 0 0;
+  position: relative;
+  animation: fadeInAnimation ease 1500ms;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+      opacity: 0;
+  }
+  100% {
+      opacity: 1;
+  }
 }
 
 .wrapper {
@@ -192,6 +204,29 @@ footer {
   color: #A1E3D8;
 }
 
+.scroll-container {
+  position: absolute;
+  top: 0;
+  right: 12%;
+  height: 100%;
+}
+
+.scroll-container:before {
+  content: '';
+  display: block;
+  height: 105vh;
+  pointer-events: none;
+}
+
+.scroll-container a {
+  position: sticky;
+  top: 75vh;
+  cursor: pointer;
+  font-size: 40px;
+  color: transparent;
+  background: url(../assets/up-arrow.png) no-repeat;
+}
+
 .container-rights {
   padding-top: 2vh;
   display: flex;
@@ -209,5 +244,5 @@ footer {
   display: grid;
   justify-items: center;
   text-decoration: none;
-  color: #A1E3D8;    
+  color: #a1e3d8;
 }
