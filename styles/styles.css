@@ -58,14 +58,14 @@ nav {
 .nav-buttons-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items: center;
 }
 
 .nav-buttons-container ul {
   display: flex;
   list-style-type: none;
-  padding-right: 27%;
+  margin-right: 10px;
 }
 
 .nav-buttons-container a {
