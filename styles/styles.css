@@ -34,10 +34,10 @@ html {
 }
 
 .wrapper {
-  max-width: 1400px;
+  max-width: 1250px;
   margin: 0 auto;
   background-color: mintcream;
-  box-shadow: 0 0 5px rgb(0 0 0 / 20%);
+  box-shadow: 0 0 5px rgb(0 0 0 / 50%);
 }
 
 .logo-container img {
