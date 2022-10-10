@@ -257,18 +257,17 @@ footer {
 }
 
 .container-rights {
-  padding-top: 2vh;
+  padding-top: 1vh;
+  padding-bottom: 1.5vh;
   display: flex;
   justify-content: space-around;
 }
-
 .container-links {
   display: flex;
   justify-content: space-around;
   padding: 2vw;
-  padding-bottom: 5vh;
+  padding-bottom: 3vh;
 }
-
 .container-links a {
   display: grid;
   justify-items: center;
