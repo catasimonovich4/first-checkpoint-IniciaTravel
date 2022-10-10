@@ -55,7 +55,7 @@ nav {
 .nav-buttons-container {
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   align-items:center;
 }
 
@@ -207,7 +207,7 @@ h1 {
 
 .a-view-more-content {
   background-color: #F7FF93;
-  padding: 0.5vw;
+  padding: 1%;
   padding-left: 1vw;
   padding-right: 1vw;
   color: #005555;
@@ -217,6 +217,10 @@ h1 {
   margin-bottom: 1vh;
   align-self: flex-end;
   text-decoration: none;  
+}
+
+.a-view-more-content:hover {
+  background-color: #A1E3D8;
 }
 
 footer {
@@ -283,6 +287,7 @@ footer {
 
 .descript-container p {
   margin: 10px;
+  text-align: justify;
 }
 
 .yt-iframe, iframe {
