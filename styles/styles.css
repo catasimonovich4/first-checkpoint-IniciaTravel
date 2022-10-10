@@ -112,6 +112,11 @@ h1 {
   padding-right: 10vw;
 }
 
+.container-title-description p {
+  font-size: 20px;
+  text-align: center;
+}
+
 .container-card {
   margin: 0 auto;
   display: grid;
@@ -144,6 +149,10 @@ h1 {
   color: #F7FF93;
 }
 
+.container p {
+  text-align: justify;
+}
+
 .card img {
   width: 100%;
   border-radius: 5px;
@@ -170,6 +179,10 @@ h1 {
   margin-bottom: 2vh;
   align-self: flex-end;
   text-decoration: none;  
+}
+
+.a-view-more:hover {
+  background-color: #a1e3d8;
 }
 
 .container-iframes {
