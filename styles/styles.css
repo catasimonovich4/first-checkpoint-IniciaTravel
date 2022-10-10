@@ -104,8 +104,11 @@ a.opcion {
 }
 
 h1 {
-  margin-bottom: 2vh;
+  margin-bottom: 5vh;
+  margin-top: 3vh;
   text-align: center;
+  font-size: 45px;
+  font-weight: bold;
 }
 
 .presentation-container {
@@ -169,12 +172,14 @@ h1 {
 .flip-card-back-home p {
   padding-left: 2vw;
   padding-right: 2vw;
+  margin-top: -13%;
 }
 
 .flip-card-back-home span {
   color: #f7ff93;
   font-weight: bold;
   padding-top: 5vh;
+  font-size: 27px;
 }
 
 .info-form-container {
@@ -227,6 +232,9 @@ h1 {
 .form-email > input,
 .form-comment > textarea {
   width: 100%;
+  border-radius: 5px;
+  border-style: none;
+  padding: 1%;
 }
 
 .submit-button {
@@ -236,6 +244,11 @@ h1 {
   border: none;
   border-radius: 3px;
   margin-top: 2vh;
+  cursor: pointer;
+}
+
+.submit-button:hover {
+  background-color:  #a1e3d8;
 }
 
 .form-button {
@@ -250,6 +263,12 @@ h1 {
 
 .info-form-container span {
   font-weight: bold;
+  font-size: 18px;
+}
+
+.info-form-container p {
+  margin-top: 1%;
+  text-align: justify;
 }
 
 footer {
