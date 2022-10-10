@@ -39,7 +39,10 @@ body {
 }
 
 .logo-container img {
-  width: 5vw;
+  height: 11vh;
+  margin-left: 2vw;
+  margin-top: 1vh;
+  margin-bottom: 1vh;
   position: relative;
 }
 
@@ -62,7 +65,7 @@ nav {
 .nav-buttons-container ul {
   display: flex;
   list-style-type: none;
-  padding-right: 8%;
+  margin-right: 10px;
 }
 
 .nav-buttons-container a {
